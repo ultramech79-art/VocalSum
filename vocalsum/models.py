@@ -26,6 +26,7 @@ class Transcriber:
         }
 
 
+class HindiEnglishTranslator:
     """
     Translation stage from Hindi to English using Helsinki-NLP/opus-mt-hi-en.
     """
