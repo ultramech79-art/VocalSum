@@ -135,6 +135,7 @@ def reconstruct_istft(magnitude, phase, hop_length=1024):
     return librosa.istft(stft_matrix, hop_length=hop_length)
 
 
+class AudioSeparator:
     """
     Orchestrates the Audio Source Separation stage using U-Net.
     """
@@ -182,6 +183,7 @@ def reconstruct_istft(magnitude, phase, hop_length=1024):
         return vocal_wave, accomp_wave, sr
 
 
+class MUSDBDataset(torch.utils.data.Dataset):
     """
     A simple PyTorch dataset interface for preprocessed MUSDB18 spectrogram tracks.
     Assumes numpy/pytorch tensors of mixed/vocal/accompaniment spectrograms.
