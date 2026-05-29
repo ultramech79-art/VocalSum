@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="vocalsum",
+    version="0.1.0",
+    description="End‑to‑end vocal separation, transcription and summarization pipeline",
+    packages=find_packages(),
+    install_requires=[
+        "torch",
+        "torchaudio",
+        "transformers",
+        "datasets",
+        "rouge_score",
+        "mir_eval",
+        "openai-whisper",
+        "librosa",
+        "soundfile",
+        "scipy",
+        "numpy",
+        "fastapi",
+        "uvicorn[standard]",
+        "python-multipart",
+        "pydantic",
+        "gradio",
+        "PyYAML",
+        "python-dotenv",
+        "tqdm",
+        "accelerate",
+    ],
+    python_requires=">=3.9",
+)
