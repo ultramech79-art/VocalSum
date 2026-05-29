@@ -77,6 +77,7 @@ class PEGASUSSummarizer:
         return summary
 
 
+class VocalSumPipeline:
     """
     Consolidated end-to-end processing pipeline orchestrating separation, transcription,
     translation (if needed), and abstractive summarization.
