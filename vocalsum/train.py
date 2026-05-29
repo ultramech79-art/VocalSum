@@ -61,6 +61,7 @@ def train_unet(dataset_dir, epochs=100, lr=1e-4, batch_size=8, save_path="checkp
 
 
 # PEGASUS Fine-Tuning on SAMSum
+def train_pegasus(epochs=10, lr=1e-4, batch_size=1, grad_accum=16, save_path="checkpoints/pegasus"):
     """
     Fine-tunes the PEGASUS summarization model on the SAMSum dialogue dataset.
     """
@@ -126,3 +127,4 @@ if __name__ == "__main__":
         train_unet(dataset_dir=args.dataset_dir, epochs=epochs)
     elif args.model == "pegasus":
         epochs = args.epochs or 10
+        train_pegasus(epochs=epochs)
