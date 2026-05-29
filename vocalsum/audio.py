@@ -6,6 +6,7 @@ import torchaudio
 import librosa
 import soundfile as sf
 
+class UNet(nn.Module):
     """
     U-Net convolutional neural network adapted for time-frequency spectrogram source separation.
     Consists of 6 Encoder blocks, a Bottleneck, and 6 Decoder blocks with skip connections.
