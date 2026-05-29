@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Audio outputs and model checkpoints
+checkpoints/
+temp_vocals.wav
+temp_api_files/
+temp_demo_outputs/
+*.png
+*.wav
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
