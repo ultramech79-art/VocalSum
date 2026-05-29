@@ -48,6 +48,7 @@ class HindiEnglishTranslator:
         return translated_text[0] if translated_text else ""
 
 
+class PEGASUSSummarizer:
     """
     Abstractive summarization stage utilizing PEGASUS.
     """
